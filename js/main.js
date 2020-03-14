@@ -194,8 +194,10 @@ var today = new Date();
 var tdate = monthNames[today.getMonth()] + ' ' + today.getDate() + ', ' + today.getFullYear();
 todaysDate.innerHTML = `Today\'s date: ${tdate}`;
 
+
 // set a default countDownDate which is 1 month away from today
 var countDownDate = monthNames[today.getMonth() + 1] + ' ' + today.getDate() + ', ' + today.getFullYear();
+c1_inputField.placeholder = `${countDownDate}`;
 
 var x, y; //global variable x
 setTheInterval(countDownDate); // Update the count down every 1 second
