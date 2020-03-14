@@ -1,0 +1,40 @@
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>JS Date Countdown</title>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="main-wrapper">
+        <p id="siteTitle">Omkar's JS Counters</p>
+        <p id="todaysDate">&nbsp;</p>
+        <div class="container">
+            <h2>Time to / from X Date</h2>
+            <input type="text" name="date" id="c1_inputField" placeholder="Dec 01, 2019">
+            <input id="c1_submitBtn" type="button" name="submitBtn" value="GO" class="submitBtn">
+            <p id="c1_result">Loading...</p>
+        </div>
+        <p class="separator"></p>
+        <div class="container">
+            <h2>Date X days from now</h2>
+            <input type="text" name="date" id="c2_inputField" placeholder="90">
+            <input id="c2_submitBtn" type="button" name="c2_submitBtn" value="GO" class="submitBtn">
+            <p id="c2_result"></p>
+        </div>
+        <p class="separator"></p>
+        <div class="container">
+            <h2>Set a Timer in Seconds</h2>
+            <input type="text" name="date" id="c3_inputField" placeholder="60">
+            <input id="c3_submitBtn" type="button" name="c3_submitBtn" value="GO" class="submitBtn">
+            <input id="c3_stopBtn" type="button" name="c3_stopBtn" value="X" class="submitBtn stopBtn hide">
+            <p id="c3_result">Enter seconds above and hit Go!</p>
+        </div>
+        <p class="separator"></p>
+        <div class="container">
+            <p> <span class="bulb"></span> Hint: You can hit enter and escape keys in the input fields! </p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/main.js"></script>

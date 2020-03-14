@@ -1,0 +1,105 @@
+body {
+    font-family: arial;
+    color: #888;
+}
+
+#main-wrapper {
+    width: 500px;
+    height: 100px;
+    position: relative;
+    top: 50;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#todaysDate {
+    position: fixed;
+    float: right;
+    top: 5px;
+    right: 20px;
+}
+
+#siteTitle {
+    position: fixed;
+    float: left;
+    top: 5px;
+    left: 20px;
+}
+
+input[type=text] {
+    outline: none;
+    width: 60%;
+    line-height: 25px;
+    padding: 15px 20px;
+    font-size: 25px;
+    color: #555;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    margin-right: 10px;
+}
+
+input[type=text]:focus {
+    border: 2px solid #79C142;
+}
+
+input[type="text"]:disabled {
+    background: repeating-linear-gradient(45deg,
+        #f0f0f0,
+        #f0f0f0 10px,
+        #f8f8f8 10px,
+        #f8f8f8 20px);
+    border: 2px solid #888;
+    /*color:white;*/
+}
+
+input[type=text]::placeholder {
+    /*Adjust placeholder text to match position of written text*/
+    position: relative;
+    top: 0.001em;
+    color: #c8c8c8;
+}
+
+.submitBtn {
+    outline: none;
+    width: 15%;
+    line-height: 25px;
+    padding: 15px 20px;
+    font-size: 25px;
+    color: #fff;
+    border: none;
+    background-color: #79C142;
+    text-align: center;
+}
+
+.submitBtn:hover {
+    background-color: black;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.stopBtn {
+    background-color: #C14242;
+    transition: all 0.5s ease;
+}
+
+.hide {
+    display: none;
+}
+
+.separator {
+    padding: 25px 0;
+}
+
+.bulb {
+     /*background: url("img/bulb.jpg") no-repeat fixed center; */
+     content:url(../img/bulb.svg);
+     width:25px;
+     position:relative;
+     top:5px;
+}
